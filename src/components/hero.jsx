@@ -1,6 +1,7 @@
 import React from 'react'
 import animation1 from '../assets/1.json'
 import Lottie from 'lottie-react';
+import pdf from '../assets/Mohamed-Saad_Lachqar.pdf'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 export default function Hero() {
   return (
@@ -27,7 +28,7 @@ export default function Hero() {
             <a href="#">Contact me</a>
           </div>
           <div className="mx-[10px] p-[13px] inline-block w-[170px] text-center font-[600] border-solid border-[2px] border-[#833BE8] rounded-[15px] hover:shadow-[2px_2px_10px_2px_#833BE8] ">
-            <a href="#">Download CV</a>
+            <a href={pdf} download>Download CV</a>
           </div>
         </div>
       </div>

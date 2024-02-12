@@ -357,9 +357,8 @@ export default function Projects() {
                 Project description :
               </h1>
               <p className="text-[#596069]">
-                a web interface for managing students notes with login and sign
-                up pages. The interface allows users to generate their report
-                card after completing their own information
+                an online shop landing page with a unique designe and an about
+                page thet created using react js and other technologies
               </p>
               <h1 className="text-[20px] mt-[25px] font-[500] text-[#4B525B]">
                 created using :
