@@ -8,7 +8,7 @@ export default function Hero() {
     <div className="w-full min-h-[100vh]  text-[#ddd] pading relative">
       <div className="mt-[18%] relative z-[100]">
         <h1 className=" font-[700] text-[35px]">
-          Hi,I'm Saad a <br /> CS student , Front End Developer{" "}
+          Hi,I'm Saad a <br /> CS student , web Developer{" "}
         </h1>
         <p className="w-[600px] text-[#9F9DA7] my-[20px]">
           I'm Mohamed-Saad a computer science student who loves building

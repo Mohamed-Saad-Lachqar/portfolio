@@ -106,3 +106,38 @@ body{
         opacity: 0;
     }
 }
+
+
+.btn::after{
+    content: "!";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ef1717;
+    border-radius: 50%;
+    position: absolute;
+    top: -7px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    color: #F5F5F5;
+    animation: bounce 2s linear infinite ;
+  }
+  
+  
+  @keyframes bounce {
+    0%,30%,50%,70%,100% {
+      transform: translateY(0px);
+    }
+  
+    10% {
+      transform: translateY(-25px);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-4px);
+    }
+  }
+  

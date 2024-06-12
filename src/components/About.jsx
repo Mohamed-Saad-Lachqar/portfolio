@@ -10,11 +10,13 @@ export default function About() {
         <div className="basis-[60%] p-[10px]">
           <h1 className="text-[60px] text-[#bbb] font-[600]">about me</h1>
           <p className="my-[20px] text-[#eee]">
-            As a passionate Computer Science student with a keen interest in web
-            development, I am eager to embark on a transformative journey as I
-            seek opportunities for a dynamic internship in the field. Committed
-            to pushing the boundaries of innovation, I am driven by a genuine
-            curiosity for creating engaging and user-centric web applications.
+            I am a web developer and computer science student who
+             is looking for a web development job. I have experience in
+              creating web applications using PHP, JavaScript, React,
+               SQL, HTML, CSS, and Tailwind CSS. I can create user-friendly 
+               websites and interactive web applications. I also manage databases
+                to keep everything running smoothly. I am excited to use my skills 
+                to work on new projects in a professional environment.
           </p>
           <h1 className="my-[20px] text-[30px] text-[#bbb] font-[600]">
             education :
@@ -42,14 +44,25 @@ export default function About() {
 
               <h2 className='text-[#833BE8] m-[10px]'>Javascript</h2>
 
+              <h2 className='text-[#833BE8] m-[10px]'>PHP</h2>
+
               <h2 className='text-[#833BE8] m-[10px]'>React js</h2>
+
+              <h2 className='text-[#833BE8] m-[10px]'>SQL</h2>
             </div>
 
             <div className='w-[300px]'>
               <h2 className='text-[#833BE8] m-[10px] '>Tailwind css</h2>
-              <h2 className='text-[#833BE8] m-[10px] '>C language</h2>
+
+              <h2 className='text-[#833BE8] m-[10px] '>Wordpress</h2>
+
+              <h2 className='text-[#833BE8] m-[10px] '>Elementor</h2>
+
               <h2 className='text-[#833BE8] m-[10px] '>Git/github</h2>
+
               <h2 className='text-[#833BE8] m-[10px] '>Responsive Design</h2>
+              
+              <h2 className='text-[#833BE8] m-[10px] '>C language</h2>
             </div>
           </div>
         </div>

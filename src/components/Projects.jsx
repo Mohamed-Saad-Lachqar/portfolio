@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import Prj1_1 from "../assets/prj1-1.png";
 import Prj1_2 from "../assets/prj1-2.png";
 import Prj1_4 from "../assets/prj1-4.png";
@@ -11,21 +11,26 @@ import Prj3_3 from "../assets/prj3-3.png";
 import Prj4_1 from "../assets/prj4-1.png";
 import Prj4_2 from "../assets/prj4-2.png";
 import Prj4_3 from "../assets/prj4-3.png";
-import { FaHtml5,FaReact, FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import Prj5_1 from "../assets/prj5-1.png";
+import Prj5_2 from "../assets/prj5-2.png";
+import Prj5_3 from "../assets/prj5-3.png";
+import { FaHtml5, FaReact, FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
-import { FaCss3Alt } from "react-icons/fa6";
+import { FaCss3Alt,FaPhp } from "react-icons/fa6";
 import { SiTailwindcss } from "react-icons/si";
 export default function Projects() {
   const [frontpage1, setfrontpage1] = useState("rotateY");
   const [frontpage2, setfrontpage2] = useState("rotateY");
   const [frontpage3, setfrontpage3] = useState("rotateY");
-  const [zindexPfront1, setzindexPfront1] = useState("z-[6]");
-  const [zindexPback1, setzindexPback1] = useState("z-[5]");
-  const [zindexPfront2, setzindexPfront2] = useState("z-[4]");
-  const [zindexPback2, setzindexPback2] = useState("z-[3]");
+  const [frontpage4, setfrontpage4] = useState("rotateY");
+  const [zindexPfront1, setzindexPfront1] = useState("z-[8]");
+  const [zindexPback1, setzindexPback1] = useState("z-[7]");
+  const [zindexPfront2, setzindexPfront2] = useState("z-[6]");
+  const [zindexPback2, setzindexPback2] = useState("z-[5]");
   const [zindexPfront3, setzindexPfront3] = useState("z-[2]");
   const [zindexPback3, setzindexPback3] = useState("z-[1]");
-  
+  const [zindexPfront4, setzindexPfront4] = useState("z-[4]");
+  const [zindexPback4, setzindexPback4] = useState("z-[3]");
 
   return (
     <div
@@ -102,7 +107,7 @@ export default function Projects() {
               <div className="absolute bottom-[5px] left-[50%]">2</div>
 
               <div
-                className="absolute border-solid border-[2px] border-[#833BE8] flex justify-center items-center text-center font-[500] rounded-[5px] p-[5px] h-[50px] text-[#833BE8]  bottom-[10px] right-[10px]"
+                className="cursor-pointer btn absolute border-solid border-[2px] border-[#833BE8] flex justify-center items-center text-center font-[500] rounded-[5px] p-[5px] h-[50px] text-[#833BE8]  bottom-[10px] right-[10px]"
                 onClick={() => {
                   setfrontpage1("");
                   setzindexPback1("z-[2]");
@@ -150,17 +155,19 @@ export default function Projects() {
             <div className="absolute bottom-[5px] left-[50%]">3</div>
 
             <div
-              className="absolute border-solid border-[2px] border-[#833BE8] flex justify-center items-center text-center font-[500] rounded-[5px] p-[5px] h-[50px] text-[#833BE8]  bottom-[10px] left-[10px]"
+              className="cursor-pointer absolute border-solid border-[2px] border-[#833BE8] flex justify-center items-center text-center font-[500] rounded-[5px] p-[5px] h-[50px] text-[#833BE8]  bottom-[10px] left-[10px]"
               onClick={() => {
                 setfrontpage1("rotateY");
-                setzindexPback1("z-[5]");
-                setzindexPfront1("z-[6]");
+                setzindexPback1("z-[7]");
+                setzindexPfront1("z-[8]");
               }}
             >
               <FaArrowLeft className="mx-[5px]" />
               prev project
             </div>
           </div>
+
+
           <div
             className={`absolute ${zindexPfront2} top-[2.5%] right-0 w-[95%] h-[95%] bg-[#eee]  origin-right rounded-tl-[0.6rem] rounded-bl-[0.6rem]  ${frontpage2}`}
           >
@@ -203,7 +210,7 @@ export default function Projects() {
               </div>
               <div className="absolute bottom-[5px] left-[50%]">4</div>
               <div
-                className="absolute border-solid border-[2px] border-[#833BE8] flex justify-center items-center text-center font-[500] rounded-[5px] p-[5px] h-[50px] text-[#833BE8]  bottom-[10px] right-[10px]"
+                className="cursor-pointer btn absolute border-solid border-[2px] border-[#833BE8] flex justify-center items-center text-center font-[500] rounded-[5px] p-[5px] h-[50px] text-[#833BE8]  bottom-[10px] right-[10px]"
                 onClick={() => {
                   setfrontpage2("");
                   setzindexPback2("z-[4]");
@@ -216,6 +223,102 @@ export default function Projects() {
           </div>
           <div
             className={`absolute pading top-[2.5%] ${zindexPback2} right-0 w-[95%] h-[95%] bg-[#eee] shadow-[0_0_60px_-0.6rem_rgba(0,0,0,0.2)] origin-right rounded-tl-[0.6rem] rounded-bl-[0.6rem]  ${frontpage2}`}
+          >
+            <div className="w-[100%] h-[450px] relative rounded-[10px] ">
+              <img
+                src={Prj5_1}
+                alt="#"
+                className="rounded-[10px] absolute top-0 left-0 w-[300px] h-[170px]"
+              />
+              <img
+                src={Prj5_2}
+                alt="#"
+                className="rounded-[10px] absolute top-[150px] right-0 w-[300px] h-[170px]"
+              />
+              <img
+                src={Prj5_3}
+                alt="#"
+                className="rounded-[10px] absolute top-[300px] left-0 w-[300px] h-[170px]"
+              />
+            </div>
+            <div className="w-[100%] mt-[30px] flex justify-center items-center">
+              <a
+                href="https://github.com/Mohamed-Saad-Lachqar/nowotch"
+                className="mx-[10px] p-[13px] inline-block w-[170px] text-center font-[600] border-solid border-[2px] border-[#833BE8] rounded-[10px] hover:bg-[#eee] hover:text-[#833BE8] bg-[#833BE8] text-[#eee]"
+              >
+                source code
+              </a>
+              <a
+                href="https://nowotch.000webhostapp.com/"
+                className="mx-[10px] p-[13px] inline-block w-[170px] text-center font-[600] border-solid border-[2px] border-[#833BE8] rounded-[10px] bg-[#eee] text-[#833BE8] hover:bg-[#833BE8] hover:text-[#eee]"
+              >
+                live preview
+              </a>
+            </div>
+            <div className="absolute bottom-[5px] left-[50%]">5</div>
+            <div
+              className="cursor-pointer absolute border-solid border-[2px] border-[#833BE8] flex justify-center items-center text-center font-[500] rounded-[5px] p-[5px] h-[50px] text-[#833BE8]  bottom-[10px] left-[10px]"
+              onClick={() => {
+                setfrontpage2("rotateY");
+                setzindexPback2("z-[5]");
+                setzindexPfront2("z-[6]");
+              }}
+            >
+              <FaArrowLeft className="mx-[5px]" /> prev project
+            </div>
+          </div>
+
+          <div
+            className={`absolute ${zindexPfront4} top-[2.5%] right-0 w-[95%] h-[95%] bg-[#eee]  origin-right rounded-tl-[0.6rem] rounded-bl-[0.6rem]  ${frontpage4}`}
+          >
+            <div className="w-[100%] h-[100%] revrotate pading">
+              <h1 className="text-[20px] mt-[25px] font-[500] text-[#4B525B]">
+                Project description :
+              </h1>
+              <p className="text-[#596069]">
+                
+              Designed and developed a dynamic and visually compelling
+                 website for Nowotch, a leading provider of network installation
+                  and connectivity solutions. The website showcases the company's 
+                  extensive range of services, including network installation, WiFi 
+                  rental, 4G/5G relay antennas, and TV/Satellite installation.
+              </p>
+              <h1 className="text-[20px] mt-[25px] font-[500] text-[#4B525B]">
+                created using :
+              </h1>
+              <div className="mt-[15px]">
+                <div className="m-[5px] font-[600] inline-block text-[#833BE8] border-solid border-[3px] rounded-[10px] text-center border-[#833BE8] p-[5px]">
+                  <FaHtml5 className="text-[70px] " />
+                  <p>HTML</p>
+                </div>
+                <div className="m-[5px] font-[600] inline-block text-[#833BE8] border-solid border-[3px] rounded-[10px] text-center border-[#833BE8] p-[5px]">
+                  <FaCss3Alt className="text-[70px] " />
+                  <p>CSS</p>
+                </div>
+                <div className="m-[5px] font-[600] inline-block text-[#833BE8] border-solid border-[3px] rounded-[10px] text-center border-[#833BE8] p-[5px]">
+                  <TbBrandJavascript className="text-[70px] " />
+                  <p>JS</p>
+                </div>
+                <div className="m-[5px] font-[600] inline-block text-[#833BE8] border-solid border-[3px] rounded-[10px] text-center border-[#833BE8] p-[5px]">
+                  <FaPhp className="text-[70px] " />
+                  <p>PHP</p>
+                </div>
+              </div>
+              <div className="absolute bottom-[5px] left-[50%]">6</div>
+              <div
+                className="cursor-pointer btn absolute border-solid border-[2px] border-[#833BE8] flex justify-center items-center text-center font-[500] rounded-[5px] p-[5px] h-[50px] text-[#833BE8]  bottom-[10px] right-[10px]"
+                onClick={() => {
+                  setfrontpage4("");
+                  setzindexPback4("z-[6]");
+                  setzindexPfront4("z-[5]");
+                }}
+              >
+                next project <FaArrowRight className="mx-[5px]" />
+              </div>
+            </div>
+          </div>
+          <div
+            className={`absolute pading top-[2.5%] ${zindexPback4} right-0 w-[95%] h-[95%] bg-[#eee] shadow-[0_0_60px_-0.6rem_rgba(0,0,0,0.2)] origin-right rounded-tl-[0.6rem] rounded-bl-[0.6rem]  ${frontpage4}`}
           >
             <div className="w-[100%] h-[450px] relative rounded-[10px] ">
               <img
@@ -248,18 +351,21 @@ export default function Projects() {
                 live preview
               </a>
             </div>
-            <div className="absolute bottom-[5px] left-[50%]">5</div>
+            <div className="absolute bottom-[5px] left-[50%]">7</div>
             <div
-              className="absolute border-solid border-[2px] border-[#833BE8] flex justify-center items-center text-center font-[500] rounded-[5px] p-[5px] h-[50px] text-[#833BE8]  bottom-[10px] left-[10px]"
+              className="cursor-pointer absolute border-solid border-[2px] border-[#833BE8] flex justify-center items-center text-center font-[500] rounded-[5px] p-[5px] h-[50px] text-[#833BE8]  bottom-[10px] left-[10px]"
               onClick={() => {
-                setfrontpage2("rotateY");
-                setzindexPback2("z-[3]");
-                setzindexPfront2("z-[4]");
+                setfrontpage4("rotateY");
+                setzindexPback4("z-[3]");
+                setzindexPfront4("z-[4]");
               }}
             >
               <FaArrowLeft className="mx-[5px]" /> prev project
             </div>
           </div>
+
+
+
           <div
             className={`absolute  ${zindexPfront3} top-[2.5%] right-0 w-[95%] h-[95%] bg-[#eee]  origin-right rounded-tl-[0.6rem] rounded-bl-[0.6rem]  ${frontpage3}`}
           >
@@ -289,13 +395,13 @@ export default function Projects() {
                   <p>JS</p>
                 </div>
               </div>{" "}
-              <div className="absolute bottom-[5px] left-[50%]">6</div>
+              <div className="absolute bottom-[5px] left-[50%]">8</div>
               <div
-                className="absolute border-solid border-[2px] border-[#833BE8] flex justify-center items-center text-center font-[500] rounded-[5px] p-[5px] h-[50px] text-[#833BE8]  bottom-[10px] right-[10px]"
+                className="cursor-pointer btn absolute border-solid border-[2px] border-[#833BE8] flex justify-center items-center text-center font-[500] rounded-[5px] p-[5px] h-[50px] text-[#833BE8]  bottom-[10px] right-[10px]"
                 onClick={() => {
                   setfrontpage3("");
-                  setzindexPback3("z-[6]");
-                  setzindexPfront3("z-[5]");
+                  setzindexPback3("z-[8]");
+                  setzindexPfront3("z-[7]");
                 }}
               >
                 next project
@@ -337,9 +443,9 @@ export default function Projects() {
                 live preview
               </a>
             </div>{" "}
-            <div className="absolute bottom-[5px] left-[50%]">7</div>
+            <div className="absolute bottom-[5px] left-[50%]">9</div>
             <div
-              className="absolute border-solid border-[2px] border-[#833BE8] flex justify-center items-center text-center font-[500] rounded-[5px] p-[5px] h-[50px] text-[#833BE8]  bottom-[10px] left-[10px]"
+              className="cursor-pointer absolute border-solid border-[2px] border-[#833BE8] flex justify-center items-center text-center font-[500] rounded-[5px] p-[5px] h-[50px] text-[#833BE8]  bottom-[10px] left-[10px]"
               onClick={() => {
                 setfrontpage3("rotateY");
                 setzindexPback3("z-[1]");
@@ -386,7 +492,7 @@ export default function Projects() {
                   <p>Tailwind</p>
                 </div>
               </div>
-              <div className="absolute bottom-[5px] left-[50%]">8</div>
+              <div className="absolute bottom-[5px] left-[50%]">10</div>
             </div>
           </div>
         </div>
