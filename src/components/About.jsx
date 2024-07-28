@@ -2,12 +2,12 @@ import React from 'react'
 import Aboutpic from '../assets/about.png'
 export default function About() {
   return (
-    <div id="about" className="min-h-[100vh] pading w-[100%]">
-      <div className="w-[100%] mt-[50px] flex justify-between flex-wrap">
-        <div className="basis-[35%] drop-shadow-[5px_5px_20px_#833BE8]">
+    <div id="about" className="min-h-[100vh] pading w-[100%] ">
+      <div className="w-[100%] mt-[50px] flex justify-center  flex-wrap">
+        <div className="basis-[500px] drop-shadow-[5px_5px_20px_#833BE8]">
           <img src={Aboutpic} alt="#" className="w-[100%] rotateY mt-[30px]" />
         </div>
-        <div className="basis-[60%] p-[10px]">
+        <div className="basis-[500px] p-[10px]">
           <h1 className="text-[60px] text-[#bbb] font-[600]">about me</h1>
           <p className="my-[20px] text-[#eee]">
             I am a web developer and computer science student who
@@ -33,11 +33,11 @@ export default function About() {
               High Institute Of Tecnology-Agadir(EST Agadir)
             </p>
           </div>
-          <h1 className="my-[20px] text-[30px] text-[#bbb] font-[600]">
+          <h1 className="my-[20px]  text-[30px] text-[#bbb] font-[600]">
             skills :
           </h1>
-          <div className='flex'>
-            <div className='w-[300px]'>
+          <div className='flex justify-between flex-wrap'>
+            <div className='min-w-[100px]'>
               <h2 className='text-[#833BE8] m-[10px]'>HTML</h2>
 
               <h2 className='text-[#833BE8] m-[10px]'>CSS</h2>
@@ -51,7 +51,7 @@ export default function About() {
               <h2 className='text-[#833BE8] m-[10px]'>SQL</h2>
             </div>
 
-            <div className='w-[300px]'>
+            <div className='min-w-[100px]'>
               <h2 className='text-[#833BE8] m-[10px] '>Tailwind css</h2>
 
               <h2 className='text-[#833BE8] m-[10px] '>Wordpress</h2>

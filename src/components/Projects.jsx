@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Prj1_1 from "../assets/prj1-1.png";
 import Prj1_2 from "../assets/prj1-2.png";
 import Prj1_4 from "../assets/prj1-4.png";
@@ -31,11 +34,27 @@ export default function Projects() {
   const [zindexPback3, setzindexPback3] = useState("z-[1]");
   const [zindexPfront4, setzindexPfront4] = useState("z-[4]");
   const [zindexPback4, setzindexPback4] = useState("z-[3]");
-
+  var settings = { 
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
   return (
+    <div>
     <div
       id="projects"
-      className="min-h-[100vh] w-full pading flex justify-center items-center"
+      className="min-h-[100vh] w-full pading flex justify-center items-center "
     >
       <div className="w-[60rem] h-[42rem] relative perspective ">
         <div className="w-[50%] h-[100%] bg-[#833BE8] shadow-[0_0_60px_-0.6rem_rgba(0,0,0,0.2)] origin-right rounded-tl-[0.6rem] rounded-bl-[0.6rem] z-[-1]">
@@ -499,6 +518,173 @@ export default function Projects() {
 
         <div className="absolute top-0 left-0 w-[50%] h-[100%] bg-[#833BE8] shadow-[0_0_60px_-0.6rem_rgba(0,0,0,0.2)] origin-right rounded-tl-[0.6rem] rounded-bl-[0.6rem] z-[-1] back-cover"></div>
       </div>
+      
     </div>
+  
+   {/*=====================================================       slider       ============================================================*/}
+
+
+    <div id="projects2" className=" justify-center items-center w-[100%] hidden">
+     <Slider {...settings} className="w-[95%] text-center ">
+     <div className="card p-[15px] flex justify-center items-center rounded-[10px] ">
+       <div className="bg-[#eee] w-[100%] relative  rounded-[10px] pb-[20px] min-h-[560px]">
+        
+       <img src={Prj1_1} alt="#" className="rounded-[10px] w-[100%] "/>
+       <h1 className="text-[20px] mt-[25px] font-[500] text-[#4B525B]">
+                Project description :
+              </h1>
+       <p className="text-[#596069] text-center slider">
+       Designed and developed a dynamic and visually engaging 
+       Graphic Designer landing page using HTML, CSS, and JavaScript.
+        This project showcases my skills, creativity, and experience in
+         web development through an interactive and user-friendly web interface
+              </p>
+
+              <div className="w-[100%] mt-[30px] flex justify-center items-center">
+              <a
+                href="https://github.com/Mohamed-Saad-Lachqar/DesignHub"
+                className="mx-[10px] p-[13px] inline-block w-[170px] text-center font-[600] border-solid border-[2px] border-[#833BE8] rounded-[10px] hover:bg-[#eee] hover:text-[#833BE8] bg-[#833BE8] text-[#eee]"
+              >
+                source code
+              </a>
+              <a
+                href="https://mohamed-saad-lachqar.github.io/DesignHub/"
+                className="mx-[10px] p-[13px] inline-block w-[170px] text-center font-[600] border-solid border-[2px] border-[#833BE8] rounded-[10px] bg-[#eee] text-[#833BE8] hover:bg-[#833BE8] hover:text-[#eee]"
+              >
+                live preview
+              </a>
+            </div>
+       </div>
+     </div>
+        {/*==================================================================================================================*/}
+
+     <div className="card p-[15px] flex justify-center items-center rounded-[10px] ">
+       <div className="bg-[#eee] w-[100%] relative  rounded-[10px] pb-[20px] min-h-[560px]">
+        
+       <img src={Prj2_1} alt="#" className="rounded-[10px] w-[100%] "/>
+       <h1 className="text-[20px] mt-[25px] font-[500] text-[#4B525B]">
+                Project description :
+              </h1>
+       <p className="text-[#596069] text-center slider">
+       The Online Library Platform is a modern web
+        application designed to provide users with a 
+        seamless and engaging experience for discovering 
+        and exploring a vast collection of books. Built using 
+        React.js and styled with Tailwind CSS, this platform leverages 
+        an existing API to dynamically fetch and display book data.
+              </p>
+
+              <div className="w-[100%] mt-[30px] flex justify-center items-center">
+              <a
+                href="https://github.com/Mohamed-Saad-Lachqar/MSLbooks"
+                className="mx-[10px] p-[13px] inline-block w-[170px] text-center font-[600] border-solid border-[2px] border-[#833BE8] rounded-[10px] hover:bg-[#eee] hover:text-[#833BE8] bg-[#833BE8] text-[#eee]"
+              >
+                source code
+              </a>
+              <a
+                href="https://mohamed-saad-lachqar.github.io/MSLbooks/"
+                className="mx-[10px] p-[13px] inline-block w-[170px] text-center font-[600] border-solid border-[2px] border-[#833BE8] rounded-[10px] bg-[#eee] text-[#833BE8] hover:bg-[#833BE8] hover:text-[#eee]"
+              >
+                live preview
+              </a>
+            </div>
+       </div>
+     </div>
+        {/*==================================================================================================================*/}
+
+     <div className="card p-[15px] flex justify-center items-center rounded-[10px] ">
+       <div className="bg-[#eee] w-[100%] relative  rounded-[10px] pb-[20px] min-h-[560px]">
+        
+       <img src={Prj5_1} alt="#" className="rounded-[10px] w-[100%] "/>
+       <h1 className="text-[20px] mt-[25px] font-[500] text-[#4B525B]">
+                Project description :
+              </h1>
+       <p className="text-[#596069] text-center slider">
+       Designed and developed a dynamic and visually compelling website for 
+       Nowotch, a leading provider of network installation and connectivity 
+       solutions. The website showcases the company's extensive range of services
+       , including network installation, WiFi rental, 4G/5G relay antennas, and TV/Satellite installation.
+              </p>
+
+              <div className="w-[100%] mt-[30px] flex justify-center items-center">
+              <a
+                href="https://github.com/Mohamed-Saad-Lachqar/nowotch"
+                className="mx-[10px] p-[13px] inline-block w-[170px] text-center font-[600] border-solid border-[2px] border-[#833BE8] rounded-[10px] hover:bg-[#eee] hover:text-[#833BE8] bg-[#833BE8] text-[#eee]"
+              >
+                source code
+              </a>
+              <a
+                href="https://nowotch.000webhostapp.com/"
+                className="mx-[10px] p-[13px] inline-block w-[170px] text-center font-[600] border-solid border-[2px] border-[#833BE8] rounded-[10px] bg-[#eee] text-[#833BE8] hover:bg-[#833BE8] hover:text-[#eee]"
+              >
+                live preview
+              </a>
+            </div>
+       </div>
+     </div>
+        {/*==================================================================================================================*/}
+
+     <div className="card p-[15px] flex justify-center items-center rounded-[10px] ">
+       <div className="bg-[#eee] w-[100%] relative  rounded-[10px] pb-[20px] min-h-[560px]">
+        
+       <img src={Prj3_1} alt="#" className="rounded-[10px] w-[100%] "/>
+       <h1 className="text-[20px] mt-[25px] font-[500] text-[#4B525B]">
+                Project description :
+              </h1>
+       <p className="text-[#596069] text-center slider">
+       a web interface for managing students notes with login
+        and sign up pages. The interface allows users to generate 
+        their report card after completing their own information
+              </p>
+
+              <div className="w-[100%] mt-[30px] flex justify-center items-center">
+              <a
+                href="https://github.com/Mohamed-Saad-Lachqar/Marks-Management-Platform"
+                className="mx-[10px] p-[13px] inline-block w-[170px] text-center font-[600] border-solid border-[2px] border-[#833BE8] rounded-[10px] hover:bg-[#eee] hover:text-[#833BE8] bg-[#833BE8] text-[#eee]"
+              >
+                source code
+              </a>
+              <a
+                href="https://mohamed-saad-lachqar.github.io/Marks-Management-Platform/"
+                className="mx-[10px] p-[13px] inline-block w-[170px] text-center font-[600] border-solid border-[2px] border-[#833BE8] rounded-[10px] bg-[#eee] text-[#833BE8] hover:bg-[#833BE8] hover:text-[#eee]"
+              >
+                live preview
+              </a>
+            </div>
+       </div>
+     </div>
+        {/*==================================================================================================================*/}
+
+     <div className="card p-[15px] flex justify-center items-center rounded-[10px] ">
+       <div className="bg-[#eee] w-[100%] relative  rounded-[10px] pb-[20px] min-h-[560px]">
+        
+       <img src={Prj4_1} alt="#" className="rounded-[10px] w-[100%] "/>
+       <h1 className="text-[20px] mt-[25px] font-[500] text-[#4B525B]">
+                Project description :
+              </h1>
+       <p className="text-[#596069] text-center slider">
+       an online shop landing page with a unique designe and an about page thet created using react js and other technologies
+
+
+              </p>
+
+              <div className="w-[100%] mt-[30px] flex justify-center items-center">
+              <a
+                href="https://github.com/Mohamed-Saad-Lachqar/MSLSHOP"
+                className="mx-[10px] p-[13px] inline-block w-[170px] text-center font-[600] border-solid border-[2px] border-[#833BE8] rounded-[10px] hover:bg-[#eee] hover:text-[#833BE8] bg-[#833BE8] text-[#eee]"
+              >
+                source code
+              </a>
+              <a
+                href="https://mohamed-saad-lachqar.github.io/MSLSHOP/"
+                className="mx-[10px] p-[13px] inline-block w-[170px] text-center font-[600] border-solid border-[2px] border-[#833BE8] rounded-[10px] bg-[#eee] text-[#833BE8] hover:bg-[#833BE8] hover:text-[#eee]"
+              >
+                live preview
+              </a>
+            </div>
+       </div>
+     </div>
+   </Slider></div>
+   </div>
   );
 }

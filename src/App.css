@@ -9,6 +9,7 @@
     transition: all 0.3s ease;
     scroll-behavior: smooth;
 }
+
 .pading{
     padding: 10px 10%;
 
@@ -140,4 +141,5 @@ body{
       transform: translateY(-4px);
     }
   }
+ 
   

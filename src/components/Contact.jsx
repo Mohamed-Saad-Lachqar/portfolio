@@ -7,8 +7,8 @@ import { IoIosMail } from "react-icons/io";
 export default function Contact() {
   return (
     <div id="contact" className="w-[100%] min-h-[100vh] pading">
-      <div className="flex  justify-between w-[100%]">
-        <div className=" basis-[50%] mt-[70px]">
+      <div className="flex  justify-between w-[100%] flex-wrap">
+        <div className=" basis-[400px] mt-[70px]">
           <h1 className="text-[60px] text-[#bbb] font-[600]">contact me</h1>
           <form
             action="#"
@@ -41,11 +41,12 @@ export default function Contact() {
             </button>
           </form>
         </div>
-        <div className="basis-[45%] h-[100%] mt-[70px] flex flex-col justify-center items-center text-center">          <Lottie
+        <div className="basis-[500px] h-[100%] mt-[70px] flex flex-col justify-center items-center text-center">         
+           <Lottie
             animationData={mail}
-            className="w-[500px]  drop-shadow-[2px_10px_20px_#833BE8]"
+            className="w-[500px]  drop-shadow-[2px_10px_20px_#833BE8] mail"
           />
-          <div className='w-[100%] flex justify-between'>
+          <div className='w-[100%] flex justify-between flex-wrap'>
             <p className="text-[#eee] text-center">
               <FaPhoneAlt className=" inline text-[23px] text-[#833BE8] mx-[5px] " />
               +212 670-444541

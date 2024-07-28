@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    
+  overflow-x: clip;
+}
+
+@media screen and (max-width:960px){
+    .computer{
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 400px;
+    }
+    .title{
+        margin-top: 350px;
+    }
+    .mail{
+        width: 300px;
+    }
+}
+@media screen and (max-width:1010px){
+    #projects{
+        display: none;
+    }
+    #projects2{
+        display: flex;
+    }
+}
+ 
+@media screen and (max-width:640px){
+    
+    p, h2{
+       max-width: 250px;
+    }
+    .slider{
+        max-width: 100%;
+    }
+}

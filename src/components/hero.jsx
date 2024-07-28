@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export default function Hero() {
   return (
     <div className="w-full min-h-[100vh]  text-[#ddd] pading relative">
-      <div className="mt-[18%] relative z-[100]">
+      <div className="mt-[18%] relative z-[100] title">
         <h1 className=" font-[700] text-[35px]">
           Hi,I'm Saad a <br /> CS student , web Developer{" "}
         </h1>
@@ -24,7 +24,7 @@ export default function Hero() {
           </a>
         </div>
         <div className="mt-[40px]">
-          <div className="mx-[10px] p-[13px] inline-block w-[170px] text-center font-[600] border-solid border-[2px] border-[#833BE8] rounded-[15px] hover:shadow-[2px_2px_10px_2px_#833BE8] bg-[#833BE8] text-[#19181C]">
+          <div className="mx-[10px] p-[13px] inline-block w-[170px] text-center font-[600] border-solid border-[2px] border-[#833BE8] rounded-[15px] hover:shadow-[2px_2px_10px_2px_#833BE8] bg-[#833BE8] text-[#19181C] m-[20px]">
             <a href="#">Contact me</a>
           </div>
           <div className="mx-[10px] p-[13px] inline-block w-[170px] text-center font-[600] border-solid border-[2px] border-[#833BE8] rounded-[15px] hover:shadow-[2px_2px_10px_2px_#833BE8] ">
@@ -34,7 +34,7 @@ export default function Hero() {
       </div>
       <Lottie
         animationData={animation1}
-        className="w-[500px] absolute z-[100] top-[170px] left-[60%] drop-shadow-[2px_10px_20px_#833BE8]"
+        className="w-[500px] absolute z-[100] top-[170px] left-[60%] drop-shadow-[2px_10px_20px_#833BE8] computer"
       />
       <div className="box">
         <div></div>
