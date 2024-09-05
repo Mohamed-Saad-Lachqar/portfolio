@@ -268,7 +268,7 @@ export default function Projects() {
                 source code
               </a>
               <a
-                href="https://nowotch.000webhostapp.com/"
+                href="http://saadlachqar.byethost17.com/nowotch.ma/
                 className="mx-[10px] p-[13px] inline-block w-[170px] text-center font-[600] border-solid border-[2px] border-[#833BE8] rounded-[10px] bg-[#eee] text-[#833BE8] hover:bg-[#833BE8] hover:text-[#eee]"
               >
                 live preview
